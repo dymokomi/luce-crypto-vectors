@@ -6,9 +6,8 @@ sources, converted to simple line files. It is test data only, not a registry
 package, and nothing here is needed at run time.
 
 luce-crypto's tests read this checkout from `../luce-crypto-vectors` beside
-luce-crypto, or from the path in `LUCE_CRYPTO_VECTORS`. luce-crypto pins the
-revision it was validated with in `bootstrap/PACKAGES`, and its CI checks out
-that revision.
+luce-crypto, or from the path in `LUCE_CRYPTO_VECTORS`. luce-crypto's CI checks
+out this repository's main.
 
 | Path | Source | Converter (in luce-crypto) |
 |---|---|---|
@@ -25,5 +24,5 @@ it was converted from. The file formats are described in each converter's
 header. Provenance and licenses: [NOTICE.md](NOTICE.md).
 
 To regenerate after changing a converter, run it from a luce-crypto checkout
-(it writes into this checkout, or into `LUCE_CRYPTO_VECTORS`), commit here,
-then update the pin in luce-crypto's `bootstrap/PACKAGES`.
+(it writes into this checkout, or into `LUCE_CRYPTO_VECTORS`) and commit here;
+luce-crypto's CI picks it up from main.
